@@ -1,0 +1,52 @@
+<DOCTYPE html>
+<html lang="pt-BR">
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE-edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- <link rel="stylesheet" type="text/css" href="style.css"> -->
+	<link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
+	<link rel="stylesheet" href="style.css">
+	<title>Decodificador</title>
+</head>
+<body>
+	<header>
+		<img class="img-class" src="imagens/logo.png" alt="Logo Alura">
+	</header>
+	
+	<main>
+		<div class="center container">
+			<div class="iten1">
+				<div class="body-text">
+					<textarea class="input-texto" cols="40" rows="6" placeholder="Digite seu texto"></textarea>
+					<p class="info"><img src="imagens/info.png" alt="Info" style="width: 14px;"> Apenas letras minúsculas e sem acento.</p>
+					<div class="botoes">
+						<button class="encriptar" onclick="btnEncriptar()">
+							Criptografar
+						</button>
+						<button class="desencriptar" onclick="btnDesencriptar()">
+							Descriptografar
+						</button>
+					</div>
+				</div>
+			</div>
+
+			<div class="iten2">
+				<div class="result-texto">
+					<div id="div-aparece" class="div-aparece">
+						<textarea class="mensagem" cols="18" rows="8"></textarea>
+						<button class="copiar" onclick="copiar()">Copiar</button>
+					</div>
+					<div id="div-desaparece" class="div-desaparece">
+						<img class="img-resposta" src="imagens/responsta.png">
+						<p class="txt-p-maior">Nenhuma mensagem encontrada</p>
+						<p class="txt-p-menor">Digite um texto que você deseja criptografar ou descriptografar.</p>
+					</div>
+				
+				</div>
+			</div>
+		</div>
+	</main>
+	<script src="script.js"></script>
+</body>
+</html>
